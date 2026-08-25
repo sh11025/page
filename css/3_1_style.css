@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 슬라이더 섹션 */
+.slider-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #111827;
+  margin-bottom: 36px;
+  letter-spacing: -0.5px;
+}
+
+.section-title .highlight {
+  color: #3b82f6;
+}
+
+/* 무한 롤링 트랙 */
+.slider-track {
+  display: flex;
+  width: max-content;
+}
+
+.slider-group {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.slider-track:hover .slider-group {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 상품 카드 (직각 모서리) */
+.service-item-card {
+  width: 220px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.service-item-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 썸네일 이미지: 직각 형태 */
+.card-thumbnail {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #f1f3f5;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 본문 영역 */
+.card-info {
+  padding: 12px 2px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 제목 */
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #303441;
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+  height: 39px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.service-item-card:hover .card-title {
+  text-decoration: underline;
+}
+
+/* 평점 & 리뷰 */
+.card-rating-wrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.card-rating-wrap .star-icon {
+  color: #ffd400;
+  font-size: 13px;
+}
+
+.card-rating-wrap .rating-score {
+  font-weight: 700;
+  color: #303441;
+}
+
+.card-rating-wrap .review-count {
+  color: #9aa1a9;
+}
+
+/* 가격 */
+.card-price-wrap {
+  font-size: 15px;
+  font-weight: 700;
+  color: #303441;
+  margin-bottom: 8px;
+}
+
+/* 하단 프로필 영역 (구분선 제거) */
+.card-author-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.author-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #e9ecef;
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-size: 12px;
+  color: #555963;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

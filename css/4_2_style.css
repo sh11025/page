@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 섹션 스타일 */
+.trust-guide-section {
+  padding: 100px 0 80px;
+  background-color: #ffffff;
+}
+
+/* 메인 타이틀 */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.6px;
+  margin-bottom: 70px;
+}
+
+/* 4열 그리드 */
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 70px;
+}
+
+/* 개별 스텝 아이템 */
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 상단 일러스트 이미지 래퍼 */
+.step-img-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.step-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.step-item:hover .step-img-box img {
+  transform: translateY(-6px);
+}
+
+/* 스텝 타이틀 */
+.step-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+  letter-spacing: -0.4px;
+}
+
+/* 스텝 설명문 */
+.step-desc {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+  word-break: keep-all;
+}
+
+/* 하단 버튼 래퍼 */
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-detail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  height: 48px;
+  padding: 0 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-detail:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+  color: #111827;
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 960px) {
+  .step-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 24px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .trust-guide-section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  .step-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .step-img-box {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+}

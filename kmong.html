@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>크몽 - 비즈니스 프리랜서 마켓</title>
+
+  <!-- 개별 CSS 연결 -->
+  <link rel="stylesheet" href="css/1_style.css">
+  <link rel="stylesheet" href="css/2_1_style.css">
+  <link rel="stylesheet" href="css/2_2_style.css">
+  <link rel="stylesheet" href="css/3_1_style.css">
+  <link rel="stylesheet" href="css/4_1_style.css">
+  <link rel="stylesheet" href="css/4_2_style.css">
+  <link rel="stylesheet" href="css/5_2_style.css">
+  <link rel="stylesheet" href="css/6_3_style.css">
+  <link rel="stylesheet" href="css/6_4_style.css">
+  <link rel="stylesheet" href="css/7_style.css">
+
+  <!-- =========================================
+       통합 레이아웃 충돌 방지 및 중앙 정렬 리셋
+       ========================================= -->
+  <style>
+    /* 1. Body 플렉스/정렬 전역 충돌 강제 리셋 */
+    html, body {
+      display: block !important;
+      width: 100% !important;
+      min-height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow-x: hidden !important;
+      background-color: #ffffff !important;
+    }
+
+    /* 2. 공통 컨테이너 중앙 정렬 보정 */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto !important;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    /* 3. 각 섹션이 독립된 세로 블록으로 쌓이도록 강제 */
+    .page-section {
+      width: 100%;
+      position: relative;
+      display: block;
+      clear: both;
+    }
+
+    /* 4. Part 2-2 (3단 가이드 박스) 중앙 컨테이너 보정 */
+    .section-2-2 .main-container {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: stretch !important;
+      gap: 28px !important;
+      max-width: 1200px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 60px 20px !important;
+      min-height: auto !important;
+    }
+
+    @media (max-width: 960px) {
+      .section-2-2 .main-container {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+    }
+
+    /* 5. 2_main_1 클래스명 충돌 방지 */
+    .section-2-1 .item-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 20px !important;
+    }
+
+    @media (max-width: 960px) {
+      .section-2-1 .item-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+
+    .section-2-1 .item-title {
+      margin-top: 0 !important;
+      margin-bottom: 8px !important;
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      color: inherit !important;
+      text-align: left !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      word-break: keep-all !important;
+    }
+
+    /* =========================================
+       ★ 6. Part 4-1 (다크 CTA 배너) 완전 중앙 정렬 보정
+       ========================================= */
+    .dark-cta-section {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      background-color: #2b303a !important;
+      padding: 70px 0 !important;
+      box-sizing: border-box !important;
+    }
+
+    .dark-cta-section .cta-container {
+      max-width: 1200px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 30px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      box-sizing: border-box !important;
+    }
+
+    .dark-cta-section .cta-left {
+      flex: 0 0 460px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+
+    .dark-cta-section .cta-right {
+      flex: 0 0 620px !important;
+      position: relative !important;
+      height: 400px !important;
+      margin: 0 !important;
+    }
+
+    @media (max-width: 1080px) {
+      .dark-cta-section .cta-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 0 20px !important;
+      }
+      .dark-cta-section .cta-left {
+        flex: auto !important;
+        width: 100% !important;
+        align-items: center !important;
+        margin-bottom: 30px !important;
+      }
+      .dark-cta-section .cta-right {
+        flex: auto !important;
+        width: 100% !important;
+        max-width: 620px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- [1] 최상단 GNB 헤더 & 히어로/카테고리 영역 -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="header-left">
+        <a href="#" class="logo-link" id="logoWrap">
+          <svg class="kmong-logo-svg" viewBox="0 0 110 32" height="26" fill="currentColor">
+            <text x="0" y="24" font-family="'Pretendard', sans-serif" font-weight="900" font-size="26" fill="#111" letter-spacing="-1">kmong</text>
+          </svg>
+        </a>
+        <span class="divider"></span>
+        <div class="biz-toggle-wrap">
+          <span class="biz-text">크몽 Biz</span>
+          <label class="switch">
+            <input type="checkbox" id="bizToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <nav class="header-right" id="headerNav">
+        <a href="#" class="nav-link">엔터프라이즈 <span class="nav-badge-blue">기업용</span></a>
+        <a href="#" class="nav-link">전문가 등록</a>
+        <a href="#" class="nav-link">로그인</a>
+        <a href="#" class="btn-signup">회원가입</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-section hero-section">
+    <div class="container hero-container">
+      <div class="hero-top-flex">
+        <!-- 좌측 검색 영역 -->
+        <div class="hero-left">
+          <h1 class="hero-title">성공이 필요한 순간,<br>딱 맞는 전문가를 찾아보세요</h1>
+
+          <form class="hero-search-box" onsubmit="return false;">
+            <input type="text" placeholder="어떤 전문가가 필요하세요?" />
+            <button type="submit" class="search-btn" aria-label="검색">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+
+          <div class="hero-tags">
+            <a href="#" class="tag-item highlight"><span class="icon">⊞</span> AI 영상</a>
+            <a href="#" class="tag-item highlight"><span class="icon">⊞</span> AI 자동화 프로그램</a>
+            <a href="#" class="tag-item">영상편집</a>
+            <a href="#" class="tag-item">성우</a>
+            <a href="#" class="tag-item">사진보정</a>
+            <a href="#" class="tag-item">식전영상</a>
+          </div>
+        </div>
+
+        <!-- 우측 3D 배너 -->
+        <div class="hero-right">
+          <div class="hero-slider-wrap" id="heroSliderWrap">
+            <div class="banner-page-indicator" id="bannerIndicator">1 / 7 &gt;</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 카테고리 -->
+      <div class="hero-category-grid" id="categoryGrid"></div>
+      <div class="hero-category-grid-extra" id="categoryGridExtra"></div>
+    </div>
+  </section>
+
+  <!-- [2] 맞춤 상품 리스트 영역 -->
+  <section class="page-section section-2-1" style="padding: 40px 0;">
+    <div class="container">
+      <div id="app-1" class="app-section"></div>
+      <div id="app-2" class="app-section"></div>
+      <div id="app-3" class="app-section"></div>
+    </div>
+  </section>
+
+  <!-- [3] 3단 추천 서비스 가이드 (디자인/마케팅/트렌드) -->
+  <section class="page-section section-2-2">
+    <div class="main-container">
+      <div class="service-card" id="box-design">
+        <h2 class="card-title">
+          <span class="highlight orange">디자인</span>에서 놓치지 마세요
+        </h2>
+        <div class="item-grid" id="grid-design"></div>
+      </div>
+
+      <div class="service-card" id="box-marketing">
+        <h2 class="card-title">
+          <span class="highlight blue">마케팅</span>에서 추천해 드려요
+        </h2>
+        <div class="item-grid" id="grid-marketing"></div>
+      </div>
+
+      <div class="service-card" id="box-trend">
+        <h2 class="card-title">
+          <span class="highlight purple">요즘,</span> 뜨고 있어요
+        </h2>
+        <div class="item-grid" id="grid-trend"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [4] 검증된 평점 4.9점 이상 슬라이더 -->
+  <section class="page-section slider-section">
+    <div class="container">
+      <h2 class="section-title">
+        크몽의 검증된<br>
+        <span class="highlight">평점 4.9점 이상</span> 서비스
+      </h2>
+    </div>
+    <div class="slider-track" id="sliderTrack"></div>
+  </section>
+
+  <!-- [5] 다크 CTA 배너 (가운데 정렬 영역) -->
+  <section class="page-section dark-cta-section" id="targetSection">
+    <div class="cta-container">
+      <div class="cta-left">
+        <div class="live-counter">
+          지금도 <span class="counter-badge">220,626 명</span>이 실시간 문의를 하고 있어요
+        </div>
+        <h2 class="cta-title">
+          실력있는 전문가들과<br>
+          비즈니스를 시작하세요
+        </h2>
+        <a href="#" class="btn-cta">크몽 시작하기</a>
+      </div>
+
+      <div class="cta-right" id="expertStage"></div>
+    </div>
+  </section>
+
+  <!-- [6] 프로세스 안내 (쉽고, 편하고, 안전한 크몽) -->
+  <section class="page-section trust-guide-section">
+    <div class="container">
+      <h2 class="section-title">쉽고, 편하고, 안전한 크몽</h2>
+      <div class="step-grid" id="stepGrid"></div>
+      <div class="btn-wrap">
+        <a href="#" class="btn-detail">자세히 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- [7] 고객 후기 무한 롤링 슬라이더 -->
+  <section class="page-section review-section">
+    <div class="container">
+      <h2 class="section-title">
+        신뢰할 수 있는 결과물<br>
+        고객 만족도 4.9점
+      </h2>
+    </div>
+    <div class="review-track" id="reviewTrack"></div>
+  </section>
+
+  <!-- [8] 크몽을 더 잘 활용하는 방법 (3단 카드) -->
+  <section class="page-section tips-guide-section">
+    <div class="container">
+      <h2 class="section-title">크몽을 더 잘 활용하는 방법</h2>
+      <div class="tips-grid" id="tipsGrid"></div>
+    </div>
+  </section>
+
+  <!-- [9] 크몽 엔터프라이즈 풀위드 배너 -->
+  <section class="page-section enterprise-banner-section" id="enterpriseBanner"></section>
+
+  <!-- [10] 푸터 영역 -->
+  <footer class="page-section site-footer" id="siteFooter"></footer>
+
+  <!-- ===================================================
+       스크립트 실행 (HTML 순서와 동일)
+       =================================================== -->
+  <script src="js/1_script.js"></script>
+  <script src="js/2_1_script1.js"></script>
+  <script src="js/2_1_script2.js"></script>
+  <script src="js/2_1_script3.js"></script>
+  <script src="js/2_2_script1.js"></script>
+  <script src="js/2_2_script2.js"></script>
+  <script src="js/2_2_script3.js"></script>
+  <script src="js/3_1_script1.js"></script>
+  <script src="js/4_1_script1.js"></script>
+  <script src="js/4_2_script.js"></script>
+  <script src="js/5_2_script.js"></script>
+  <script src="js/6_3_script.js"></script>
+  <script src="js/6_4_script.js"></script>
+  <script src="js/7_script.js"></script>
+
+</body>
+</html>

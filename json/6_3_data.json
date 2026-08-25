@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "크몽 검색 어시스턴트",
+    "description": "전문가들을 더 빠르고 정확하게 찾을 수 있도록<br>AI 카이가 도와드려요.",
+    "btnText": "검색 어시스턴트 바로가기",
+    "btnLink": "#",
+    "image": "image/6_3_Text_01.png"
+  },
+  {
+    "id": 2,
+    "title": "크몽로그",
+    "description": "전문가의 진솔한 이야기와 의뢰인들의 생생한 리뷰로<br>성공 노하우를 배워보세요.",
+    "btnText": "크몽로그 보러가기",
+    "btnLink": "#",
+    "image": "image/6_3_Text_02.png"
+  },
+  {
+    "id": 3,
+    "title": "포트폴리오",
+    "description": "전문가들의 다양한 작업 사례와 실제 결과물을<br>한눈에 확인하실 수 있어요.",
+    "btnText": "포트폴리오 보러가기",
+    "btnLink": "#",
+    "image": "image/6_3_Text_03.png"
+  }
+]

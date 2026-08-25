@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  color: #303441;
+}
+
+.site-footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 0 80px;
+  border-top: 1px solid #f2f4f7;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 1. 상단 링크 & 고객센터 영역 */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.footer-cs-area {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.cs-btn-wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn-cs {
+  flex: 1;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e5ed;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #303441;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.btn-cs:hover {
+  border-color: #9aa1a9;
+  background-color: #f9fafb;
+}
+
+.cs-info {
+  font-size: 12.5px;
+  color: #555963;
+  line-height: 1.6;
+}
+
+.cs-info .notice-bold {
+  font-weight: 700;
+  color: #303441;
+  margin-top: 6px;
+}
+
+/* 상단 4단 메뉴 그리드 */
+.footer-nav-grid {
+  display: flex;
+  gap: 64px;
+}
+
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+}
+
+.nav-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #303441;
+  margin-bottom: 18px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #727585;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+/* 2. 약관 링크 */
+.footer-terms {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #f2f4f7;
+}
+
+.term-link {
+  font-size: 13px;
+  color: #727585;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.term-link.bold {
+  font-weight: 700;
+  color: #303441;
+}
+
+.term-link:hover {
+  text-decoration: underline;
+}
+
+/* 3. 로고 / 인증마크 / 앱다운 & SNS */
+.footer-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0 24px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brand-cert-wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.cert-badges {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cert-badges img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.apps-sns-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.app-btn img {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.sns-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sns-btn img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* 4. 사업자 정보 & 저작권 */
+.footer-bottom {
+  font-size: 11.5px;
+  color: #868b94;
+  line-height: 1.7;
+}
+
+.company-info {
+  margin-bottom: 16px;
+  word-break: keep-all;
+}
+
+.company-info a {
+  color: #555963;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #868b94;
+}
+
+/* 반응형 */
+@media (max-width: 960px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .footer-mid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

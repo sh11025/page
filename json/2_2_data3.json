@@ -1,0 +1,22 @@
+[
+  {
+    "title": "에어컨 청소",
+    "image": "image/trend01-cleaning.jpg",
+    "link": "#"
+  },
+  {
+    "title": "전화 운세",
+    "image": "image/trend02-fortune.jpg",
+    "link": "#"
+  },
+  {
+    "title": "숏폼 영상",
+    "image": "image/trend03-shorts.jpg",
+    "link": "#"
+  },
+  {
+    "title": "투잡·재테크 전자책",
+    "image": "image/trend04-ebook.jpg",
+    "link": "#"
+  }
+]

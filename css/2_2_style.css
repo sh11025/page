@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 28px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* 개별 카드 박스 */
+.service-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px 28px;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 카드 제목 */
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
+}
+
+/* 제목 하이라이트 색상 */
+.highlight.orange { color: #f97316; }
+.highlight.blue { color: #3b82f6; }
+.highlight.purple { color: #6366f1; }
+
+/* 2x2 아이템 그리드 */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 16px;
+}
+
+/* 개별 아이템 링크 */
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  group: hover;
+  cursor: pointer;
+}
+
+/* 이미지 래퍼 */
+.image-box {
+  width: 100%;
+  aspect-ratio: 1.25 / 1;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-item:hover .image-box {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 라벨 텍스트 */
+.item-title {
+  margin-top: 10px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #374151;
+  text-align: center;
+  letter-spacing: -0.3px;
+  transition: color 0.2s ease;
+}
+
+.service-item:hover .item-title {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 960px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}

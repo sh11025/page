@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* 배너 섹션: 푸른 하늘 그라데이션 배경 */
+.enterprise-banner-section {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(100deg, #1f6fd8 0%, #308cf2 50%, #469cf8 100%);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 컨테이너 */
+.banner-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+/* 좌측 콘텐츠 영역 */
+.banner-content {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메인 타이틀 */
+.banner-title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #ffffff;
+  letter-spacing: -0.6px;
+  margin-bottom: 24px;
+  word-break: keep-all;
+}
+
+/* 체크리스트 목록 */
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+/* SVG 체크 아이콘 */
+.check-icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
+/* CTA 버튼 */
+.btn-enterprise {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 44px;
+  padding: 0 24px;
+  background-color: #1a1e27;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-enterprise:hover {
+  background-color: #11141a;
+  transform: translateY(-2px);
+}
+
+/* 우측 빌딩 이미지 래퍼 */
+.banner-building-wrap {
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  height: 100%;
+  max-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner-building-wrap img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom right;
+  display: block;
+  /* 블랙 배경의 투명화 처리가 필요한 경우 아래 mix-blend-mode 활성화 */
+  mix-blend-mode: screen;
+}
+
+/* 반응형 대응 */
+@media (max-width: 960px) {
+  .banner-container {
+    padding: 60px 24px;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .banner-building-wrap {
+    right: -40px;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-title {
+    font-size: 24px;
+  }
+  .feature-item {
+    font-size: 13.5px;
+  }
+  .banner-building-wrap {
+    display: none;
+  }
+}

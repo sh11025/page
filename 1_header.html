@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>크몽 - 전문가 매칭</title>
+  <link rel="stylesheet" href="css/1_style.css">
+</head>
+<body>
+
+  <!-- 0. 최상단 GNB 네비게이션 헤더 -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- 좌측 로고 및 크몽 Biz 토글 -->
+      <div class="header-left">
+        <a href="#" class="logo-link" id="logoWrap">
+          <!-- 크몽 SVG 텍스트 로고 -->
+          <svg class="kmong-logo-svg" viewBox="0 0 110 32" height="26" fill="currentColor">
+            <text x="0" y="24" font-family="'Pretendard', sans-serif" font-weight="900" font-size="26" fill="#111" letter-spacing="-1">kmong</text>
+          </svg>
+        </a>
+        <span class="divider"></span>
+        <div class="biz-toggle-wrap">
+          <span class="biz-text">크몽 Biz</span>
+          <label class="switch">
+            <input type="checkbox" id="bizToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- 우측 링크 및 로그인/회원가입 -->
+      <nav class="header-right" id="headerNav">
+        <a href="#" class="nav-link">엔터프라이즈 <span class="nav-badge-blue">기업용</span></a>
+        <a href="#" class="nav-link">전문가 등록</a>
+        <a href="#" class="nav-link">로그인</a>
+        <a href="#" class="btn-signup">회원가입</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- 1. 최상단 히어로 & 카테고리 영역 -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      
+      <!-- 상단 영역: 좌측 검색/태그 + 우측 3D 스택 배너 -->
+      <div class="hero-top-flex">
+        
+        <!-- 좌측 검색 영역 -->
+        <div class="hero-left">
+          <h1 class="hero-title">성공이 필요한 순간,<br>딱 맞는 전문가를 찾아보세요</h1>
+          
+          <form class="hero-search-box" onsubmit="return false;">
+            <input type="text" placeholder="어떤 전문가가 필요하세요?" />
+            <button type="submit" class="search-btn" aria-label="검색">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+
+          <!-- 추천 검색어 칩 -->
+          <div class="hero-tags">
+            <a href="#" class="tag-item highlight"><span class="icon">⊞</span> AI 영상</a>
+            <a href="#" class="tag-item highlight"><span class="icon">⊞</span> AI 자동화 프로그램</a>
+            <a href="#" class="tag-item">영상편집</a>
+            <a href="#" class="tag-item">성우</a>
+            <a href="#" class="tag-item">사진보정</a>
+            <a href="#" class="tag-item">식전영상</a>
+          </div>
+        </div>
+
+        <!-- 우측 3D 스택 롤링 배너 -->
+        <div class="hero-right">
+          <div class="hero-slider-wrap" id="heroSliderWrap">
+            <!-- JS를 통해 3D 스택 카드가 주입됩니다 -->
+            <div class="banner-page-indicator" id="bannerIndicator">1 / 7 &gt;</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 하단 카테고리 그리드 -->
+      <div class="hero-category-grid" id="categoryGrid">
+        <!-- JS를 통해 카테고리 아이템이 삽입됩니다 -->
+      </div>
+      <div class="hero-category-grid-extra" id="categoryGridExtra">
+      <!-- "전체보기" 클릭 시 JS를 통해 추가 카테고리가 삽입됩니다 -->
+      </div>
+    </div>
+  </section>
+
+  <script src="js/1_script.js"></script>
+</body>
+</html>

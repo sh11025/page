@@ -1,0 +1,22 @@
+[
+  {
+    "title": "지도 활성화",
+    "image": "image/marketing01-map.jpg",
+    "link": "#"
+  },
+  {
+    "title": "스토어 마케팅",
+    "image": "image/marketing02-store.jpg",
+    "link": "#"
+  },
+  {
+    "title": "백링크·트래픽",
+    "image": "image/marketing03-backlink.jpg",
+    "link": "#"
+  },
+  {
+    "title": "바이럴·포스팅",
+    "image": "image/marketing04-posting.jpg",
+    "link": "#"
+  }
+]

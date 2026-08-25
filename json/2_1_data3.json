@@ -1,0 +1,48 @@
+[
+  {
+    "title": "예비창업가들이<br>많이 찾아요",
+    "tags": ["명함 디자인", "홈페이지 개편", "앱 개편", "사업계획서 컨설팅"],
+    "items": [
+      {
+        "thumbnail": "image/main_1_09.jpg",
+        "isPrime": false,
+        "title": "명함디자인 명함제작 1대1 맞춤 디자인 제작. 24시간",
+        "rating": "4.9",
+        "reviewCount": "367",
+        "price": "22,000",
+        "providerImg": "image/main_2_09.jpg",
+        "providerName": "HDLOGO"
+      },
+      {
+        "thumbnail": "image/main_1_10.jpg",
+        "isPrime": false,
+        "title": "사이트 제작 펜션/기업/일반기업등",
+        "rating": "5.0",
+        "reviewCount": "519",
+        "price": "399,000",
+        "providerImg": "image/main_2_10.jpg",
+        "providerName": "퓨처반응형"
+      },
+      {
+        "thumbnail": "image/main_1_11.jpg",
+        "isPrime": false,
+        "title": "바이브코딩으로 간단 앱/웹 만들어드립니다.",
+        "rating": "5.0",
+        "reviewCount": "10",
+        "price": "11,000",
+        "providerImg": "image/main_2_11.png",
+        "providerName": "순수한박하사탕2903"
+      },
+      {
+        "thumbnail": "image/main_1_12.jpg",
+        "isPrime": false,
+        "title": "중진공 정책자금 융자 청년전용창업자금 합격서류 제공",
+        "rating": "4.7",
+        "reviewCount": "14",
+        "price": "43,000",
+        "providerImg": "image/main_2_12.jpg",
+        "providerName": "피치스톤"
+      }
+    ]
+  }
+]

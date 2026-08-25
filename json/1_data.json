@@ -1,0 +1,43 @@
+{
+  "gnb": {
+    "logoImg": "image/logo.png",
+    "logoAlt": "kmong",
+    "bizText": "크몽 Biz",
+    "links": [
+      { "name": "엔터프라이즈", "tag": "기업용", "link": "#" },
+      { "name": "전문가 등록", "tag": null, "link": "#" },
+      { "name": "로그인", "tag": null, "link": "#" },
+      { "name": "회원가입", "isButton": true, "link": "#" }
+    ]
+  },
+  "banners": [
+    { "id": 1, "img": "image/Banner_01.jpg", "link": "#" },
+    { "id": 2, "img": "image/Banner_02.png", "link": "#" },
+    { "id": 3, "img": "image/Banner_03.jpg", "link": "#" },
+    { "id": 4, "img": "image/Banner_04.gif", "link": "#" },
+    { "id": 5, "img": "image/Banner_05.jpg", "link": "#" },
+    { "id": 6, "img": "image/Banner_06.png", "link": "#" },
+    { "id": 7, "img": "image/Banner_07.gif", "link": "#" }
+  ],
+  "categories": [
+    { "name": "오픈마켓", "badge": "업종별", "badgeType": "outline", "img": "image/icon_01.png", "link": "#" },
+    { "name": "F&B", "badge": "업종별", "badgeType": "outline", "img": "image/icon_02.png", "link": "#" },
+    { "name": "디자인", "badge": "", "img": "image/icon_03.svg", "link": "#" },
+    { "name": "IT·프로그래밍", "badge": "", "img": "image/icon_04.svg", "link": "#" },
+    { "name": "영상·사진·음향", "badge": "", "img": "image/icon_05.svg", "link": "#" },
+    { "name": "마케팅", "badge": "", "img": "image/icon_06.svg", "link": "#" },
+    { "name": "전자책", "badge": "", "img": "image/icon_07.svg", "link": "#" },
+    { "name": "세무·법무·노무", "badge": "", "img": "image/icon_08.svg", "link": "#" },
+    { "name": "AI 서비스", "badge": "Best", "badgeType": "fill", "img": "image/icon_09.svg", "link": "#" },
+    { "name": "전체보기", "badge": "", "img": "image/imgi_196_default.svg", "link": "#" },
+    { "name": "번역·통역", "badge": "", "img": "image/icon_10.svg", "link": "#" },
+    { "name": "주문제작", "badge": "", "img": "image/icon_11.svg", "link": "#" },
+    { "name": "취업·입시", "badge": "", "img": "image/icon_12.svg", "link": "#" },
+    { "name": "투잡·노하우", "badge": "", "img": "image/icon_13.svg", "link": "#" },
+    { "name": "직무역량 레슨", "badge": "", "img": "image/icon_14.svg", "link": "#" },
+    { "name": "운세", "badge": "", "img": "image/icon_15.svg", "link": "#" },
+    { "name": "심리상담", "badge": "", "img": "image/icon_16.svg", "link": "#" },
+    { "name": "취미 레슨", "badge": "", "img": "image/icon_17.svg", "link": "#" },
+    { "name": "생활서비스", "badge": "", "img": "image/icon_18.svg", "link": "#" }
+  ]
+}

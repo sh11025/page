@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "로고 디자인 브랜드 맞춤 제작 1:1 전담 디자인",
+    "image": "images/slider_01.png",
+    "rating": "5.0",
+    "reviews": 142,
+    "price": "55,000원~",
+    "authorImg": "images/profile_01.png",
+    "authorName": "디자인스튜디오",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "네이버 지도 스마트플레이스 순위 상승 마케팅",
+    "image": "images/slider_02.png",
+    "rating": "4.9",
+    "reviews": 98,
+    "price": "120,000원~",
+    "authorImg": "images/profile_02.png",
+    "authorName": "마케팅솔루션",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "스토어 상세페이지 및 이벤트 기획전 배너 디자인",
+    "image": "images/slider_03.png",
+    "rating": "5.0",
+    "reviews": 310,
+    "price": "89,000원~",
+    "authorImg": "images/profile_03.png",
+    "authorName": "디자인랩",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "유튜브 쇼츠 & 인스타 릴스 트렌디한 숏폼 영상 편집",
+    "image": "images/slider_04.png",
+    "rating": "4.9",
+    "reviews": 84,
+    "price": "40,000원~",
+    "authorImg": "images/profile_04.png",
+    "authorName": "숏폼크리에이티브",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "title": "포토샵 누끼 작업 및 고해상도 이미지 파일 변환",
+    "image": "images/slider_05.png",
+    "rating": "5.0",
+    "reviews": 215,
+    "price": "10,000원~",
+    "authorImg": "images/profile_05.png",
+    "authorName": "픽셀마스터",
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "title": "실전 부업 & 재테크 수익 창출 비법 전자책",
+    "image": "images/slider_06.png",
+    "rating": "4.9",
+    "reviews": 160,
+    "price": "15,000원~",
+    "authorImg": "images/profile_06.png",
+    "authorName": "머니그로스",
+    "link": "#"
+  },
+  {
+    "id": 7,
+    "title": "고품격 비즈니스 명함 및 서식류 디자인 인쇄",
+    "image": "images/slider_07.png",
+    "rating": "5.0",
+    "reviews": 77,
+    "price": "30,000원~",
+    "authorImg": "images/profile_07.png",
+    "authorName": "아트프린트",
+    "link": "#"
+  },
+  {
+    "id": 8,
+    "title": "IR 피칭 덱 & 사업계획서 PPT 디자인 템플릿 제작",
+    "image": "images/slider_08.png",
+    "rating": "5.0",
+    "reviews": 65,
+    "price": "150,000원~",
+    "authorImg": "images/profile_08.png",
+    "authorName": "피치디자이너",
+    "link": "#"
+  },
+  {
+    "id": 9,
+    "title": "가정용 & 업소용 시스템 에어컨 분해 세척 케어",
+    "image": "images/slider_09.png",
+    "rating": "4.9",
+    "reviews": 190,
+    "price": "80,000원~",
+    "authorImg": "images/profile_09.png",
+    "authorName": "클린홈케어",
+    "link": "#"
+  },
+  {
+    "id": 10,
+    "title": "실전 블로그 바이럴 포스팅 상위 노출 마케팅",
+    "image": "images/slider_10.png",
+    "rating": "4.9",
+    "reviews": 113,
+    "price": "50,000원~",
+    "authorImg": "images/profile_10.png",
+    "authorName": "바이럴팩토리",
+    "link": "#"
+  },
+  {
+    "id": 11,
+    "title": "1:1 비밀보장 심층 전화 타로 & 사주 신년 운세 상담",
+    "image": "images/slider_11.png",
+    "rating": "5.0",
+    "reviews": 280,
+    "price": "25,000원~",
+    "authorImg": "images/profile_11.png",
+    "authorName": "달빛타로",
+    "link": "#"
+  },
+  {
+    "id": 12,
+    "title": "고품질 SEO 백링크 세팅 및 웹사이트 트래픽 유입",
+    "image": "images/slider_12.png",
+    "rating": "5.0",
+    "reviews": 92,
+    "price": "90,000원~",
+    "authorImg": "images/profile_12.png",
+    "authorName": "SEO랩",
+    "link": "#"
+  }
+]

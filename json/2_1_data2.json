@@ -1,0 +1,48 @@
+[
+  {
+    "title": "매장 운영할 때<br>많이 찾아요",
+    "tags": ["로고 디자인", "음식 사진 촬영", "전단지", "지도 최적화노출"],
+    "items": [
+      {
+        "thumbnail": "image/main_1_05.jpg",
+        "isPrime": true,
+        "title": "로고 - 대기업협력사 / 크몽어워즈 수상대표 고퀄제작",
+        "rating": "4.9",
+        "reviewCount": "5,610",
+        "price": "90,000",
+        "providerImg": "image/main_2_05.jpg",
+        "providerName": "그리미아트디자인"
+      },
+      {
+        "thumbnail": "image/main_1_06.jpg",
+        "isPrime": false,
+        "title": "음식사진촬영 제품 농수산물 밀키트촬영 상세페이지촬영",
+        "rating": "5.0",
+        "reviewCount": "270",
+        "price": "30,000",
+        "providerImg": "image/main_2_06.jpg",
+        "providerName": "스튜디오파운드리"
+      },
+      {
+        "thumbnail": "image/main_1_07.jpg",
+        "isPrime": true,
+        "title": "깔끔함을 바탕으로 메세지가 돋보이는 디자인",
+        "rating": "4.9",
+        "reviewCount": "461",
+        "price": "33,000",
+        "providerImg": "image/main_2_07.jpg",
+        "providerName": "Weaver1"
+      },
+      {
+        "thumbnail": "image/main_1_08.jpg",
+        "isPrime": true,
+        "title": "N사 지도 노출 최적화 진짜 해결사와 빠르게 진행하세요",
+        "rating": "5.0",
+        "reviewCount": "197",
+        "price": "300,000",
+        "providerImg": "image/main_2_08.jpg",
+        "providerName": "정직한컴퍼니"
+      }
+    ]
+  }
+]

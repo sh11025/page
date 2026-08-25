@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "똑똑한 개발자",
+    "image": "image/seller-01.png",
+    "imgSize": 76,
+    "width": 150,
+    "top": "15px",
+    "left": "20px",
+    "delay": "0.1s",
+    "tags": ["IT·프로그래밍", "홈페이지 신규 제작"]
+  },
+  {
+    "id": 2,
+    "name": "제니미디어",
+    "image": "image/seller-02.png",
+    "imgSize": 52,
+    "width": 110,
+    "top": "70px",
+    "left": "195px",
+    "delay": "0.25s",
+    "tags": ["영상·사진·음향", "광고·홍보 영상"]
+  },
+  {
+    "id": 3,
+    "name": "위플래닛",
+    "image": "image/seller-03.png",
+    "imgSize": 70,
+    "width": 135,
+    "top": "240px",
+    "left": "115px",
+    "delay": "0.4s",
+    "tags": ["IT·프로그래밍", "앱"]
+  },
+  {
+    "id": 4,
+    "name": "다정디자인",
+    "image": "image/seller-04.png",
+    "imgSize": 68,
+    "width": 135,
+    "top": "140px",
+    "left": "320px",
+    "delay": "0.3s",
+    "tags": ["디자인", "브랜드 로고"]
+  },
+  {
+    "id": 5,
+    "name": "그랩스튜디오",
+    "image": "image/seller-05.png",
+    "imgSize": 50,
+    "width": 115,
+    "top": "295px",
+    "left": "365px",
+    "delay": "0.55s",
+    "tags": ["영상·사진·음향", "광고·홍보 영상"]
+  },
+  {
+    "id": 6,
+    "name": "광고지와이",
+    "image": "image/seller-06.png",
+    "imgSize": 66,
+    "width": 135,
+    "top": "45px",
+    "left": "475px",
+    "delay": "0.2s",
+    "tags": ["마케팅", "종합광고대행"]
+  },
+  {
+    "id": 7,
+    "name": "시즈닝",
+    "image": "image/seller-07.png",
+    "imgSize": 74,
+    "width": 140,
+    "top": "215px",
+    "left": "485px",
+    "delay": "0.5s",
+    "tags": ["디자인", "웹 UI·UX"]
+  }
+]
