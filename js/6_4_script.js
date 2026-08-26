@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <img 
           src="${data.buildingImg}" 
           alt="빌딩 일러스트" 
-          onerror="this.onerror=null; this.src='images/building.jpg';"
+          onerror="this.onerror=null; this.src='image/building.jpg';"
         >
       </div>
     `;

@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   let appData = DEFAULT_DATA;
 
   try {
-    const res = await fetch('1_data.json').catch(() => fetch('data.json'));
+    const res = await fetch('json/1_data.json').catch(() => fetch('data.json'));
     if (res && res.ok) {
       const jsonData = await res.json();
       appData = { ...DEFAULT_DATA, ...jsonData };
